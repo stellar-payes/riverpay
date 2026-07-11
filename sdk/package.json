@@ -1,0 +1,23 @@
+{
+  "name": "@riverpay/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for the RiverPay streaming-payments protocol on Stellar/Soroban",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@stellar/stellar-sdk": "^13.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
