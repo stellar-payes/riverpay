@@ -8,10 +8,6 @@ Salaries arrive monthly but bills arrive daily. Freelancers chase invoices for 3
 ## Solution
 A Soroban streaming-payments protocol: a payer locks funds and a rate-per-second; the recipient's balance grows every second and is withdrawable anytime. Cancellation splits the remainder fairly at the exact moment of cancellation. Use cases shipped in the app: **payroll**, **rent**, **subscriptions**, **allowances**.
 
-## Why it gets accepted
-- **Drips (ironically perfect):** Drips itself proves streaming is fundable infrastructure. `stream-core` is a reusable protocol crate — wallets, DAOs, and payroll apps become dependents.
-- **GrantFox:** protocol + SDK + app = deep, well-scoped issue backlog across Rust, TypeScript, and design.
-
 ## Monorepo Structure
 ```
 riverpay/
